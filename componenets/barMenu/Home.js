@@ -4,7 +4,6 @@ import Settings from './Settings';
 import Catigories from './Catigories';
 
 const Home = props => {
-  console.log('HOMEPROPS', props);
   return (
     <View>
       <Button
