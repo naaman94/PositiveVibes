@@ -1,12 +1,25 @@
 import React, {Component} from 'react';
-import {Text, View, Button} from 'react-native';
+import {View, Button} from 'react-native';
+import MyCatigories from './MyCatigories';
+import Notifications from './Notifications';
 
-export default class Settings extends Component {
-  render() {
-    return (
-      <View>
-        <Text> hello </Text>
-      </View>
-    );
-  }
-}
+const Settings = props => {
+  console.log('HOMEPROPS', props);
+  return (
+    <View>
+      <Button
+        title="My Catigories"
+        onPress={() => {
+          props.navigation.navigate({routeName: 'MyCatigories'});
+        }}
+      />
+      <Button
+        title="Notifications"
+        onPress={() => {
+          props.navigation.navigate({routeName: 'Notifications'});
+        }}
+      />
+    </View>
+  );
+};
+export default Settings;
