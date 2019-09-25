@@ -5,6 +5,7 @@ import Settings from './Settings';
 import Catigories from './Catigories';
 import MyCatigories from './MyCatigories';
 import Notifications from './Notifications';
+// import list from '../list';
 
 const MainNavigator = createStackNavigator({
   Home: {screen: Home},
@@ -12,6 +13,7 @@ const MainNavigator = createStackNavigator({
   Catigories: {screen: Catigories},
   MyCatigories: {screen: MyCatigories},
   Notifications: {screen: Notifications},
+  // list: {screen: list},
 });
 
 export default createAppContainer(MainNavigator);
