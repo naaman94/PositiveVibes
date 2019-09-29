@@ -27,6 +27,10 @@ target 'project7' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'react-native-checkbox', :path => '../node_modules/@react-native-community/checkbox'
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'project7Tests' do
     inherit! :search_paths
     # Pods for testing

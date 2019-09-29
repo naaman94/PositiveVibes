@@ -10,10 +10,10 @@ import CatSlice from './CatSlice';
 
 const MainNavigator = createStackNavigator({
   Home: { screen: Home },
+  MyCatigories: { screen: MyCatigories },
   Catigories: { screen: Catigories },
   CatSlice: { screen: CatSlice },
   list: { screen: list },
-  MyCatigories: { screen: MyCatigories },
   Notifications: { screen: Notifications },
   Settings: { screen: Settings },
 });
